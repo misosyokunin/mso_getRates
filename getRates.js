@@ -131,7 +131,7 @@ breakButton.addEventListener("click", () => {
 });
 bk.append(breakButton);
 const progress = document.createElement("progress");
-progress.max = COUNT1 + (COUNT1 * (COUNT2 - 1));
+progress.max = COUNT2 ? COUNT1 * COUNT2 : COUNT1;
 progress.value = 0;
 bk.append(progress);
 {
